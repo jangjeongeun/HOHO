@@ -1,0 +1,133 @@
+body {
+  height: 2000px;
+  background-image: url('../img/bg.png');
+}
+.clear {
+  clear: both;
+}
+
+#select {
+  position: absolute;
+  top: 70px;
+  right: 199px;
+  background-color: black;
+  width: 63px;
+  height: 3px;
+  border-radius: 12%;
+}
+
+/* 섹션1 */
+#section1 {
+  /* border: solid 3px red; */
+  width: 100%;
+  height: 1200px;
+  position: relative;
+}
+
+.title {
+  /* border: solid 2px red; */
+  height: 220px;
+  position: absolute;
+  left: 780px;
+  top: 220px;
+  color: white;
+  font-family: 'yg-jalnan';
+  font-size: 8.55rem;
+}
+.animation{
+  width: 1700px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 100px;
+  animation-name: myframe;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes myframe {
+  from {
+    top: 500px;
+  }
+  50% {
+    top: 450px;
+  }
+  to {
+    top: 500px;
+  }
+}
+#standlist {
+  /* border: 2px solid red; */
+  width: 1500px;
+  height: 500px;
+  position: absolute;
+  top: 700px;
+  left: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.stand {
+  /* border: solid 2px blue; */
+  height: 500px;
+  width: 300px;
+  background-image: url('../img/stand.png');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.con1:hover {
+  background-image: url('../img/01.png');
+}
+.con2:hover {
+  background-image: url('../img/02.png');
+}
+.con3:hover {
+  background-image: url('../img/03.png');
+}
+.con4:hover {
+  background-image: url('../img/04.png');
+}
+#buy {
+  /* border: 2px solid red; */
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 1200px;
+  left: 700px;
+  color: white;
+  text-align: center;
+  font-family: 'yg-jalnan';
+  font-size: 1.5rem;
+}
+
+/* 섹션2 */
+
+#section2 {
+  /* border: solid 2px white; */
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+}
+.mockup {
+  /* background-color: gray; */
+  width: 1920px;
+  height: 800px;
+  filter: brightness(100%);
+  overflow: hidden;
+  transition: filter 0.4s ease-in-out;
+}
+.mockup:hover {
+  filter: brightness(50%);
+}
+.up1 {
+  background-image: url('../img/Mockup_02.png');
+  background-position: center;
+}
+.up2{
+  background-image: url('../img/Mockup_03.png');
+  background-position: center;
+  background-size: 70%;
+}

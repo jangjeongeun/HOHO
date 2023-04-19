@@ -1,0 +1,58 @@
+* {margin: 0; padding: 0;}
+
+img { display: block;}
+
+header {
+  /* border: solid 2px black; */
+  box-sizing: border-box;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: relative;
+}
+
+#logo {
+  /* border: solid 2px red; */
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  left: 200px;
+  top: 15px;
+}
+#logo {
+  /* border: solid 2px red; */
+  width: 130px;
+  height: 96px;
+  position: absolute;
+  left: 200px;
+  top: 10px;
+}
+#logo > img {
+  width: 130px;
+}
+
+#GNB_ul {
+  /* border: solid 2px red; */
+  display: inline-block;
+  position: absolute;
+  right: 200px;
+  text-align: right;
+  top: 42px;
+}
+.GNB_li {
+  /* border: solid 2px black; */
+  display: inline-block;
+  width: 120px;
+}
+.GNB_li > a {
+  font-family: 'yg-jalnan';
+  font-size: 1.3rem;
+  /* font-family: 'TheJamsil';
+  font-weight: 700; */
+  /* font-size: 1.5rem; */
+  transition: color 0.2s ease-in-out;
+}
+.GNB_li > a:link {color: black; text-decoration: none;}
+.GNB_li > a:visited {color: black;}
+.GNB_li > a:hover {color: #ff0055; }
+.GNB_li > a:active {color: #ff0055;}

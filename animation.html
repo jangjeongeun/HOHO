@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: inline-block;
+      background-color: black;
+      position: absolute;
+      animation-name: myframe;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    @keyframes myframe {
+      from {
+        top: -100px;
+      }
+      50% {
+        top: 0;
+      }
+      to {
+        top: -100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div><img src="./img/animation.png"></div>
+  
+</body>
+</html>

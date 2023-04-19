@@ -1,0 +1,258 @@
+body {
+  height: 2000px;
+}
+.clear {
+  clear: both;
+}
+
+#select {
+  position: absolute;
+  top: 70px;
+  right: 450px;
+  background-color: black;
+  width: 63px;
+  height: 3px;
+  border-radius: 12%;
+}
+
+/* 섹션1 */
+#section1 {
+  width: 100%;
+  height: 2000px;
+  background-color: rgb(0, 0, 0);
+  background-image: url(../img/bg.png);
+}
+.title {
+  /* border: solid 2px red; */
+  height: 220px;
+  position: absolute;
+  top: 350px;
+  left: 450px;
+  color: white;
+  font-family: 'yg-jalnan';
+  font-size: 7rem;
+}
+#screen {
+  position: relative;
+  top: 600px;
+  left: 150px;
+  width: 1600px;
+  height: 900px;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: inset 15px 15px 100px 200px rgb(0, 0, 0),  15px 15px 200px 50px rgb(255, 255, 255, 0.3);
+  background-image: url('../img/bg_sp.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+video {
+  width: 100%;
+  z-index: -10;
+  opacity: 40%;
+}
+.planet {
+  width: 250px;
+  position: absolute;
+}
+.planet  img {
+  width: 80%;
+}
+.obj1 {
+  position: absolute;
+  top: 340px;
+  left: 700px;
+}
+.obj2 {
+  position: absolute;
+  top: 520px;
+  left: 380px;
+}
+.obj3 {
+  position: absolute;
+  top: 400px;
+  right: 290px;
+}
+.obj4 {
+  position: absolute;
+  top: 90px;
+  left: 650px;
+}
+a {
+  filter: brightness(0%);
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  filter: brightness(100%);
+}
+
+/* 섹션2 */
+#section2 {
+  background-color: black;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+.tabmenu {
+  /* border: solid 4px red; */
+  width: 1600px;
+  height: 1100px;
+  position: relative;
+  left: 150px;
+}
+.tabmenu input {
+  display: none;
+}
+.tablist {
+  /* border: solid 4px blue; */
+  box-sizing: border-box;
+  width: 1000px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list {
+  /* border: solid 4px white; */
+  width: 150px;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+.planet1 {
+  background-image: url(../img/planet1.png);
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(30%);
+}
+.planet2 {
+  background-image: url(../img/planet2.png);
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+}
+.planet3 {
+  background-image: url(../img/planet3.png);
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(40%);
+}
+.planet4 {
+  background-image: url(../img/planet4.png);
+  background-size: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+}
+label[for*="tab"]{
+  cursor: pointer;
+}
+.content {
+  /* border: solid 4px blue; */
+  width: 1600px;
+  height: 600px;
+  position: absolute;
+  top: 300px;
+  display: none;
+  border-radius: 80px;
+  box-shadow: 15px 15px 200px 50px rgb(255, 255, 255, 0.3);
+}
+input[id="tab1"]:checked ~ .con1 {
+  display: block;
+  /* background-color: blue; */
+}
+input[id="tab2"]:checked ~ .con2 {
+  display: block;
+} 
+input[id="tab3"]:checked ~ .con3 {
+  display: block;
+  /* background-color: blue; */
+} 
+input[id="tab4"]:checked ~ .con4 {
+  display: block;
+} 
+input[id="tab1"]:checked ~ .tablist > label[for=tab1] {
+  filter: brightness(100%);
+  width: 200px;
+  height: 200px;
+  background-size: 200px;
+} 
+input[id="tab2"]:checked ~ .tablist > label[for=tab2] {
+  filter: brightness(100%);
+  width: 200px;
+  height: 200px;
+  background-size: 200px;
+} 
+input[id="tab3"]:checked ~ .tablist > label[for=tab3] {
+  filter: brightness(100%);
+  width: 200px;
+  height: 200px;
+  background-size: 200px;
+}
+input[id="tab4"]:checked ~ .tablist > label[for=tab4] {
+  filter: brightness(100%);
+  width: 200px;
+  height: 200px;
+  background-size: 200px;
+} 
+.image {
+  /* border: solid 4px red; */
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 650px;
+  height: 600px;
+  float: left;
+}
+.image1 {background-image: url('../img/planet1.png');}
+.image2 {background-image: url('../img/planet2.png');}
+.image3 {background-image: url('../img/planet3.png');}
+.image4 {background-image: url('../img/planet4.png');}
+
+.comment {
+  border-left: solid 2px white;
+  margin-top: 50px;
+  width: 870px;
+  height: 500px;
+  float: right;
+  color: white;
+  font-family: 'yg-jalnan';
+}
+.comment > h1 {
+  margin-left: 50px;
+  font-size: 5rem;
+}
+.comment > p {
+  margin-left: 50px;
+  margin-top: 180px;
+  font-size: 1.5rem;
+}
+
+
+.animation{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 860px;
+  animation-name: myframe;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes myframe {
+  from {
+    top: -300px;
+  }
+  50% {
+    top: -200px;
+  }
+  to {
+    top: -300px;
+  }
+}

@@ -1,0 +1,82 @@
+body {
+  height: 2000px;
+  background-image: url('../img/bg.png');
+}
+.clear {
+  clear: both;
+}
+
+#select {
+  position: absolute;
+  top: 70px;
+  right: 325px;
+  background-color: black;
+  width: 63px;
+  height: 3px;
+  border-radius: 12%;
+}
+
+/* 섹션1 */
+#section1 {
+  /* border: solid 3px red; */
+  width: 100%;
+  height: 2800px;
+  position: relative;
+}
+
+.title {
+  /* border: solid 2px red; */
+  height: 220px;
+  position: absolute;
+  left: 700px;
+  top: 220px;
+  color: white;
+  font-family: 'yg-jalnan';
+  font-size: 8.55rem;
+}
+
+.mediabox {
+  /* border: solid 2px blue; */
+  width: 1600px;
+  height: 2000px;
+  position: absolute;
+  top: 600px;
+  left: 160px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.medialist {
+  /* border: solid 2px blue; */
+  width: 1600px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.madia {
+  /* border: solid 2px white; */
+  width: 480px;
+  height: 480px;
+  border-radius: 80px;
+  /* filter: blur(4px); */
+  filter: brightness(20%);
+  /* box-shadow: inset 0px 0px 10px 10px white; */
+  /* box-shadow: 0px 0px 10px 10px white; */
+  transition: all 0.3s ease-in-out;
+}
+.madia:hover {
+  filter: brightness(100%);
+  box-shadow: 0px 0px 30px 10px rgb(255, 255, 255, 0.6);
+}
+.con01{background-image: url('../img/bg_art.png'); background-repeat: no-repeat; background-position: center; background-size: 800px;}
+.con02{background-image: url('../img/pixel.png'); background-repeat: no-repeat; background-position: center; background-size: 800px;}
+.con03{background-image: url('../img/intro3.png'); background-repeat: no-repeat; background-position: left; background-size: 1000px;}
+.con04{background-image: url('../img/coco2.jpg'); background-repeat: no-repeat; background-position: center; background-size: 500px;}
+.con05{background-image: url('../img/robo2.jpg'); background-repeat: no-repeat; background-position: center; background-size: 500px;}
+.con06{background-image: url('../img/hoho2.jpg'); background-repeat: no-repeat; background-position: center; background-size: 500px;}
+.con07{background-image: url('../img/intro2.jpg'); background-repeat: no-repeat; background-position: center; background-size: 1000px;}
+.con08{background-image: url('../img/planet1.png'); background-repeat: no-repeat; background-position: center; background-size: 400px;}
+.con09{background-image: url('../img/planet2.png'); background-repeat: no-repeat; background-position: center; background-size: 400px;}
+.con10{background-image: url('../img/planet3.png'); background-repeat: no-repeat; background-position: center; background-size: 400px;}
+.con11{background-image: url('../img/planet4.png'); background-repeat: no-repeat; background-position: center; background-size: 400px;}
+.con12{background-image: url('../img/intro1.jpg'); background-repeat: no-repeat; background-position: center; background-size: 1000px;}

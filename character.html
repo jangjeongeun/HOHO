@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐릭터</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/character.css">
+</head>
+<body>
+
+  <!-- 헤더시작 -->
+  <header>
+    <div id="logo"><img src="./img/logo.png"></div>
+
+    <nav id="GNB">
+      <ul id="GNB_ul">
+        <li class="GNB_li"><a href="./index.html">게임소개</a></li>
+        <li class="GNB_li"><a href="#">캐릭터</a></li>
+        <li class="GNB_li"><a href="./worldview.html">세계관</a></li>
+        <li class="GNB_li"><a href="./gallery.html">갤러리</a></li>
+        <li class="GNB_li"><a href="./store.html">스토어</a></li>
+      </ul>
+    </nav>
+    <div id="select"></div>
+  </header>
+
+  <!-- 메인콘텐츠 -->
+  <main>
+    <section id="section1">
+      <div class="title">Characters</div>
+
+      <article id="slide_section">
+        <div class="slide">
+          <input type="radio" name="slide" id="slide01" checked>
+          <input type="radio" name="slide" id="slide02">
+          <input type="radio" name="slide" id="slide03">
+          <ul class="slidebox">
+            <li class="slidecontent">
+              <a class="slideimg"><img src="./img/hoho.jpg"></a>
+            </li>
+            <li class="slidecontent">
+              <a class="slideimg"><img src="./img/coco.jpg"></a>
+            </li>
+            <li class="slidecontent">
+              <a class="slideimg"><img src="./img/robo.jpg"></a>
+            </li>
+          </ul>
+  
+          <div class="slide_frame">
+            <div class="frame1">
+              <label class="left none"></label>
+              <label for="slide02" class="right"></label>
+            </div>
+            <div class="frame2">
+              <label for="slide01" class="left"></label>
+              <label for="slide03" class="right"></label>
+            </div>
+            <div class="frame3">
+              <label for="slide02" class="left"></label>
+              <label class="right none"></label>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="comment">양 옆의 버튼을 클릭해보세요!</div>
+      <div class="dashed line1"></div>
+    </section>
+
+    <section id="section2">
+
+      <div class="dashed line2"></div>
+
+      <article class="article1">
+        <div class="illustration hoho"><img id="topleft" src="./img/hoho2.jpg"></div>
+        <div class="contents con1">
+          <article class="box_right">
+            <div class="text_right">
+              <span>Hoho</span>
+              <p>동그랗고 계란같은 호호 <br>
+                과묵하고 잠이 많다. <br>
+                눈빛과 표정으로 대화한다.<br>
+                만사가 태연하지만 비장할 땐 비장한 <br>
+                주인공이다.
+              </p></div>
+          </article>
+        </div>
+      </article>
+      <div class="clear"></div>
+
+      <article class="article1">
+        <div class="illustration coco"><img src="./img/coco2.jpg"></div>
+        <div class="contents con2">
+          <article class="box_left">
+            <div class="text_left">
+              <span>Coco</span>
+              <p>머리가 코코넛같은 코코 <br>
+              작지만 코가 있어서 냄새를 잘맡는다. <br>
+              잠이 많아 항상 졸거나 졸린 표정을<br>
+              하고 있지만, 어린애다운 <br>
+              씩씩하고 명량한 기운이 있다.</p>
+            </div>
+          </article>
+        </div>
+      </article>
+      <div class="clear"></div>
+
+      <article class="article1">
+        <div class="illustration robo"><img id="bottomleft" src="./img/robo2.jpg"></div>
+        <div class="contents con3">
+          <article class="box_right">
+            <div class="text_right">
+              <span>Robo</span>
+              <p>
+                호호를 도와 행성 정화를 돕는 <br>
+                든든한 비서 로봇이다. <br>
+                기계부품으로 만들어졌기 때문에 <br>
+                오염되지 않고, 기계팔을 늘리며 <br>
+                이동할 수 있다 <br>.
+              </p>
+            </div>
+          </article>
+        </div>
+      </article>
+      <div class="clear"></div>
+      
+    </section>
+
+    <section id="section3">
+      <div class="animation">
+        <div class="icon"><img src="./img/animation2.png" alt=""></div>
+        <div class="icon"><img src="./img/animation2.png" alt=""></div>
+        <div class="icon"><img src="./img/animation2.png" alt=""></div>
+      </div>
+      <div id="box_list">
+        <div class="hoverbox HB1"><div class="glass"></div></div>
+        <div class="hoverbox HB2"><div class="glass"></div></div>
+        <div class="hoverbox HB3"><div class="glass"></div></div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- 푸터 -->
+  <footer>
+    <div id="iconbox">
+      <img id="icon" src="./img/icon.png">
+    </div>
+    <div id="text">
+      작성:장정은 <br>
+      경기도 의왕시 계원대학로 66 계원예술대학교<br>
+      Email:22161107@kaywon.ac.kr <br>
+      Copyright &copy; 2023. 장정은 All Rights Reserved
+    </div>
+  </footer>
+  
+</body>
+</html>
